@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'institute_logo.dart';
-
 class StudentHeader extends StatelessWidget {
   const StudentHeader({
     super.key,
@@ -13,7 +11,7 @@ class StudentHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: const Color(0xFF2E9742),
+      color: const Color(0xFF3E8320),
       child: SafeArea(
         bottom: false,
         child: Padding(
@@ -22,7 +20,7 @@ class StudentHeader extends StatelessWidget {
             vertical: 18,
           ),
           child: Row(
-            children: [
+            children:[
               Expanded(
                 flex: 11,
                 child: FittedBox(
@@ -36,7 +34,7 @@ class StudentHeader extends StatelessWidget {
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 24,
-                          fontWeight: FontWeight.w700,
+                          fontWeight:FontWeight.w700,
                           height: 1.2,
                         ),
                       ),
@@ -54,10 +52,6 @@ class StudentHeader extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 16),
-              const Flexible(
-                flex: 10,
-                child: InstituteLogo(),
-              ),
             ],
           ),
         ),

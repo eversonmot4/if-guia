@@ -18,13 +18,13 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF2E9742),
+          seedColor: const Color(0xFF3E8320),
         ),
         scaffoldBackgroundColor: Colors.white,
       ),
       home: const AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle(
-          statusBarColor: Color(0xFF2E9742),
+          statusBarColor: Color(0xFF3E8320),
           statusBarIconBrightness: Brightness.light,
           systemNavigationBarColor: Colors.white,
           systemNavigationBarIconBrightness: Brightness.dark,

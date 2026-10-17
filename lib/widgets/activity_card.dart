@@ -15,7 +15,7 @@ class ActivityCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: const Color(0xFF2E9742),
+      color: const Color(0xFF3E8320),
       borderRadius: BorderRadius.circular(4),
       clipBehavior: Clip.antiAlias,
       child: InkWell(

@@ -13,14 +13,14 @@ class OfficialDocumentCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color(0xFF2E9742),
+        color: const Color(0xFF3E8320),
         borderRadius: BorderRadius.circular(4),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Row(
-            children: [
+            children:[
               Expanded(
                 child: Text(
                   'Quer conferir todos os detalhes?',
@@ -71,13 +71,13 @@ class OfficialDocumentCard extends StatelessWidget {
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children:[
                     Flexible(
                       child: Text(
                         'Abrir documento original',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Color(0xFF2E9742),
+                          color: Color(0xFF3E8320),
                           fontSize: 11,
                           fontWeight: FontWeight.w600,
                         ),
@@ -86,7 +86,7 @@ class OfficialDocumentCard extends StatelessWidget {
                     SizedBox(width: 8),
                     Icon(
                       Icons.open_in_new,
-                      color: Color(0xFF2E9742),
+                      color: Color(0xFF3E8320),
                       size: 16,
                     ),
                   ],
