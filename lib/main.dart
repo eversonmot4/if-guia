@@ -1,7 +1,9 @@
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'core/theme/app_theme.dart';
-import 'features/home/ui/home_screen.dart';
+import 'features/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +18,15 @@ class MyApp extends StatelessWidget {
       title: 'Posso ou Não Posso?',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: const HomeScreen(),
+      home: const AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle(
+          statusBarColor: Color(0xFF3E8320),
+          statusBarIconBrightness: Brightness.light,
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+        ),
+        child: HomeScreen(),
+      ),
     );
   }
 }
