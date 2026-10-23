@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'core/theme/app_theme.dart';
-import 'features/home/home_screen.dart';
+import 'core/theme/theme.dart';
+import 'features/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,12 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       home: const AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle(
-          statusBarColor: Color(0xFF3E8320),
-          statusBarIconBrightness: Brightness.light,
-          systemNavigationBarColor: Colors.white,
-          systemNavigationBarIconBrightness: Brightness.dark,
-        ),
+        value: AppTheme.systemUiOverlayStyle,
         child: HomeScreen(),
       ),
     );
