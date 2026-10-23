@@ -1,7 +1,5 @@
 class AppImages {
-  static const String logo = 'assets/nome.png';
-  static const String logoWhite = 'assets/nome.png';
-  static const String google = 'assets/nome.png';
-  static const String basket = 'assets/nome.png';
-  static const String clock = 'assets/nome.png';
+  static const String logoHorizontalIFMA = 'assets/LogoIFMAHorizontal.png';
+  static const String logoVerticalIFMA = 'assets/LogoIFMAVerticalFundoBranco.png';
+  static const String logoPngIFMA = 'assets/LogoIFMAHorizontal.png';
 }
